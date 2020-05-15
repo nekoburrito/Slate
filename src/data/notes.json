@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "A note, a note!",
+    "body": "A kingdom for a note!\nMaybe even two kingdoms!\n\nOr three!",
+    "status": "open",
+    "uuid": "b12s34dlo"
+  },
+  {
+    "id": 2,
+    "title": "A second note",
+    "body": "Something quick",
+    "status": "open",
+    "uuid": "b10293oz01"
+  },
+  {
+    "id": 3,
+    "title": "A Third note",
+    "body": "A quick task",
+    "status": "closed",
+    "uuid": "b09ku7gc6"
+  }
+]

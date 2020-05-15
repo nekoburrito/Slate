@@ -1,0 +1,119 @@
+@import 'styles/modules/font-variables';
+
+.note-list {
+  padding: 25px;
+}
+
+.note {
+  transition: .3s ease-in-out;
+}
+
+.note:not(:last-of-type):hover {
+  margin-bottom: 5px;
+}
+
+.note-editor-container {
+  padding: 10px;
+  border: $light-main-border;
+  border-color: transparent;
+  border-radius: 3px;
+  transition: background-color .3s ease-in-out;
+
+  &:not(.selected):hover {
+    background: $hard-white-translucent;
+    color: $text-primary;
+  }
+
+  &.selected {
+    margin-bottom: 10px;
+    border: $light-main-border;
+    background-color: $light-background;
+  }
+}
+
+// .note-editor-body {
+
+//   &:not(.selected) {
+//     height: 0;
+//     transition: height 1s ease-in-out;
+//     display: none;
+//   }
+//   &.selected {
+//     height: auto;
+//     transition: height 1s ease-in-out;
+//     display: block;
+//   }
+// }
+
+.note-title-container {
+  width: 100%;
+}
+
+.note-editor-title {
+  display: flex;
+  align-items: baseline;
+}
+
+.note-status-toggle {
+  width: 25px;
+  height: 25px;
+  border-color: transparent;
+  background: transparent;
+  display: inline-flex;
+  vertical-align: middle;
+}
+.status-closed {
+  text-decoration: line-through;
+}
+
+.note-title-input {
+  background: transparent;
+  line-height: 25px;
+  width: 100%;
+  height: 25px;
+  margin: 0;
+  border: 0;
+  text-align: left;
+  font: $secondary-header-font;
+  padding: 0;
+  transition: all .2s ease-in-out;
+
+  .selected & {
+    border-bottom: $light-main-border;
+    padding-bottom: 10px;
+  }
+}
+
+.note-status-toggle {
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+
+  font: $secondary-header-font;
+  color: $light-secondary-header;
+}
+
+.note-title-input:focus,
+.note-body:focus {
+  outline: none;
+}
+
+.note-editor-body {
+  display: none;
+  padding: 0 0 0 25px;
+
+  &.selected {
+    display: block;
+  }
+}
+
+.note-body {
+  background: transparent;
+  vertical-align: middle;
+  width: 100%;
+  margin-top: 10px;
+  border: 0;
+  resize: none;
+  transition: height .3s ease-out;
+}
+
